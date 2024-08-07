@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Online Store</title>
+    <meta charset="utf8" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header style="display: flex; justify-content: space-between">
+      <div class="login_">
+        <p id="text_login">Hello</p>
+        <button type="submit" id="button_head_register">Register</button>
+        <button type="submit" id="button_head_login">Login</button>
+        <button type="submit" id="button_head_logout">Logout</button>
+      </div>
+      <div>
+        <button type="submit" id="button_basket">
+          <img
+            src="img/shopping-basket.png"
+            alt=""
+            style="width: 25px; height: 20px"
+          /><span id="cartCount">0</span>
+        </button>
+        <button type="submit" id="history_order">History Order</button>
+      </div>
+    </header>
+    <div id="mainContainer">
+      <aside id="aside"></aside>
+      <main id="main">
+        <form id="registrationForm">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="form-group">
+            <button type="submit" id="button">Register</button>
+          </div>
+        </form>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="username1">Username</label>
+            <input type="text" id="username1" name="username1" required />
+          </div>
+          <div class="form-group">
+            <label for="password1">Password</label>
+            <input type="password" id="password1" name="password1" required />
+          </div>
+          <div class="form-group">
+            <button type="submit" id="button1">Login</button>
+          </div>
+        </form>
+        <div id="content"></div>
+        <div id="contentGood"></div>
+      </main>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
